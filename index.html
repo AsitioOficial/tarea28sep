@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U2 T1</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+        <i class="bi bi-laptop"></i> Desarrolla aqui
+        </div>
+        <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#cotizador">Cotizador</a>
+        <a href="#autor">Autor</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+        <h1 class="animar-titulo">cotizaciones de desarrollo web.</h1>
+        <p class="animar-texto">Calcula el costo total del desarrollo de tu sitio</p>
+        </section>
+
+        <section id="cotizador" class="seccion">
+        <h2>Generar Cotización</h2>
+        <form id="formulario">
+
+                <label for="cliente">Nombre del cliente</label>
+                <input type="text" id="cliente" placeholder="ejemplo: angel ponce" required>
+                <label for="proyecto">Nombre del proyecto</label>
+                <input type="text" id="proyecto" placeholder="ejemplo: itgam" required>
+                <label for="paginas">Cantidad de páginas</label>
+                <input type="number" id="paginas" placeholder="ejemplo 2" min="1" required>
+                <label for="precioPagina">Precio por página</label>
+                <input type="number" id="precioPagina" placeholder="ejemplo 211" min="0" required>
+                <label for="horas">Horas adicionales de desarrollo</label>
+                <input type="number" id="horas" placeholder="ejemplo: 5" min="0" required>
+                <label for="precioHora">Precio por hora</label>
+                <input type="number" id="precioHora" placeholder="ejemplo: 150" min="0" required>
+                <button type="submit">
+                <i class="bi bi-calculator"></i> Cotiza aqui
+                </button>
+
+            </form>
+            <h2>Cotizaciones anteriores</h2>
+            <div id="resultado" class="caja-info"></div>
+
+        </section>
+
+    </main>
+
+    <footer id="autor">
+        <p><strong>Alumno:</strong> Angel Israel Ponce Garcia</p>
+        <p><strong>Número de Control:</strong>211130246</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
